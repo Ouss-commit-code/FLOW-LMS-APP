@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import DarkModeToggle from './DarkModeToggle';
 import { Button } from './ui/button';
+import SearchInput from './SearchInput';
  
 
 
@@ -27,7 +28,7 @@ export default function Header() {
 
               </span>
             </Link>
-           { /* <SearchInput/> */ } 
+           <SearchInput/>  
 
         </div>
             
