@@ -87,8 +87,8 @@ interface CourseCardProps {
             )}
 
          </div>
-    </div>
-  </div>    
+     </div>
+   </div>    
   </Link>
   ); 
 }
