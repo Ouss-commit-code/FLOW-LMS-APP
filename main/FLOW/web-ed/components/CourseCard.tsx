@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Loader } from "./Loader";
 import { urlFor } from "@/sanity/lib/image";
 import { BookOpen } from "lucide-react";
+import { CourseProgress } from "./CourseProgress";
 
 interface CourseCardProps {
   course: GetCoursesQueryResult[number];
@@ -75,17 +76,15 @@ interface CourseCardProps {
               </div>
             )}
 
-
-
             {/* Progress Bar */}
-          {/* {typeof progress === "number" && (
+          {typeof progress === "number" && (
               <CourseProgress
                 progress={progress}
                 variant="default"
                 size="sm"
                 label="Course Progress"
               />
-            )} */}
+            )}
 
          </div>
     </div>
