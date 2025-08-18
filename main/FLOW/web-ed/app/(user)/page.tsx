@@ -1,3 +1,5 @@
+
+
 import CourseCard from "@/components/CourseCard";
 import Hero from "@/components/Hero";
 import { getCourses } from "@/sanity/lib/courses/getCourses";
