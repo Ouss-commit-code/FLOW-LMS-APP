@@ -16,4 +16,5 @@ function SearchInput() {
     </Form> 
     );  
 }
-export default SearchInput
+
+export default SearchInput;
