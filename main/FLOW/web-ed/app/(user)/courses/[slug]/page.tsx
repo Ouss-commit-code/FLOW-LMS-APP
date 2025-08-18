@@ -58,10 +58,31 @@ interface CoursePageProps {
             <ChevronsLeft className="mr-2 h-5 w-5" />
             Back to Courses
           </Link>
-
+        
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+         <div>
+             <div className="flex items-center gap-2 mb-4">
+                <span className="px-3 py-1 bg-white/10 text-white rounded-full text-sm font-medium backdrop-blur-sm">
+                  {course.category?.name || "Uncategorized"}
+                </span>
+             </div>
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                {course.title}
+              </h1>
+              <p className="text-lg text-white/90 max-w-2xl">
+                {course.description}
+              </p>
+         </div>
+            
+              {/* <EnrollButton courseId={course._id} isEnrolled={isEnrolled} /> */}
         </div>
      </div>
-    </div>    
+
+
+
+    </div>
+  </div>
+       
   )    
 }
 

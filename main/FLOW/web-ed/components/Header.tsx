@@ -23,7 +23,7 @@ export default function Header() {
             > 
               <BookOpenTextIcon className="h-6 w-6 text-primary" /> <strong>FLOW</strong>
               <span className="text-xl font-bold bg-gradient-to-r
-               from-primary/90 to-primary bg-clip-text text-transparent">
+               from-primary/0 to-primary bg-clip-text text-transparent">
                 
 
               </span>
