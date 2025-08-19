@@ -5,6 +5,7 @@ import { BookOpen, ChevronsLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import EnrollButton from "@/components/EnrollButton";
+import { isEnrolledInCourse } from "@/sanity/lib/student/isEnrolledInCourse";
 
 
 interface CoursePageProps {
@@ -20,10 +21,10 @@ interface CoursePageProps {
     const { userId } = await auth();
 
 
-     const isEnrolled =false; 
-   /*  userId && course?._id
+     const isEnrolled =
+     userId && course?._id
       ? await isEnrolledInCourse(userId, course._id)
-      : false;  */
+      : false; 
 
     if(!course) {
      return(
