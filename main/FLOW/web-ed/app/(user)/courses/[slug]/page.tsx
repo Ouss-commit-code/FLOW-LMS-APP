@@ -1,10 +1,10 @@
 import getCourseBySlug from "@/sanity/lib/courses/getCourseBySlug";
 import { urlFor } from "@/sanity/lib/image";
 import { auth } from "@clerk/nextjs/server";
-import { ChevronsLeft } from "lucide-react";
+import { BookOpen, ChevronsLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
+import EnrollButton from "@/components/EnrollButton";
 
 
 interface CoursePageProps {
@@ -20,10 +20,10 @@ interface CoursePageProps {
     const { userId } = await auth();
 
 
-    /* const isEnrolled =
-    userId && course?._id
+     const isEnrolled =false; 
+   /*  userId && course?._id
       ? await isEnrolledInCourse(userId, course._id)
-      : false; */
+      : false;  */
 
     if(!course) {
      return(
@@ -72,18 +72,94 @@ interface CoursePageProps {
               <p className="text-lg text-white/90 max-w-2xl">
                 {course.description}
               </p>
-         </div>
-            
-              {/* <EnrollButton courseId={course._id} isEnrolled={isEnrolled} /> */}
+         </div>    
+         
+        <EnrollButton courseId={course._id} isEnrolled={isEnrolled} />
+      
         </div>
      </div>
-
-
-
     </div>
-  </div>
-       
-  )    
+    {/* Content Section */} 
+    <div className="container mx-auto px-4 py-12">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+    {/* Main Content */}
+          <div className="lg:col-span-2">
+            <div className="bg-card rounded-lg p-6 mb-8 border border-border">
+              <h2 className="text-2xl font-bold mb-4">Course Content</h2>
+              <div className="space-y-4">
+                {course.modules?.map((module, index) => (
+                  <div
+                    key={module._id}
+                    className="border border-border rounded-lg"
+                  >
+                    <div className="p-4 border-b border-border">
+                      <h3 className="font-medium">
+                        Module {index + 1}: {module.title}
+                      </h3>
+                    </div>
+                    <div className="divide-y divide-border">
+                      {module.lessons?.map((lesson, lessonIndex) => (
+                        <div
+                          key={lesson._id}
+                          className="p-4 hover:bg-muted/50 transition-colors"
+                        >
+                          <div className="flex items-center gap-4">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-medium">
+                              {lessonIndex + 1}
+                            </div>
+                            <div className="flex items-center gap-3 text-foreground">
+                              <BookOpen className="h-4 w-4 text-muted-foreground" />
+                              <span className="font-medium">
+                                {lesson.title}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>    
+    {/* Sidebar */}
+  <div>
+    <div className="bg-card rounded-lg p-6 sticky top-4 border border-border">
+              <h2 className="text-xl font-bold mb-4">Instructor</h2>
+              {course.instructor && (
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    {course.instructor.photo && (
+                      <div className="relative h-12 w-12">
+                        <Image
+                          src={urlFor(course.instructor.photo).url() || ""}
+                          alt={course.instructor.name || "Course Instructor"}
+                          fill
+                          className="rounded-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <div className="font-medium">
+                        {course.instructor.name}
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        Instructor
+                      </div>
+                    </div>
+                  </div>
+                  {course.instructor.bio && (
+                    <p className="text-muted-foreground">
+                      {course.instructor.bio}
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>            
+      </div>             
+   </div>    
+ </div>      
+  );    
 }
-
 export default CoursePage;
