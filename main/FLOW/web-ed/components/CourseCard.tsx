@@ -1,7 +1,7 @@
 import { GetCoursesQueryResult } from "@/sanity.types";
 import Image from "next/image";
 import Link from "next/link";
-import { Loader } from "./Loader";
+import { Loader } from "./ui/Loader";
 import { urlFor } from "@/sanity/lib/image";
 import { BookOpen } from "lucide-react";
 import { CourseProgress } from "./CourseProgress";

@@ -1,10 +1,9 @@
 "use client";
-
 import { useUser } from "@clerk/nextjs";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useTransition } from "react";
+import { useTransition, useState } from "react";
 
 function EnrollButton({
   courseId,
@@ -16,65 +15,92 @@ function EnrollButton({
   const { user, isLoaded: isUserLoaded } = useUser();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
+  const [error, setError] = useState<string | null>(null);
 
-  const handleEnroll = () => {
-    if (!user?.id) return;
-    startTransition(() => {
-      router.push(`/dashboard/courses/${courseId}`);
+  const handleEnroll = async (courseId: string) => {
+    if (!user?.id) {
+      // Redirect to sign in instead of trying to enroll
+      router.push("/sign-in");
+      return;
+    }
+
+    startTransition(async () => {
+      try {
+        setError(null);
+        
+        // Add actual enrollment logic here
+        // This should be an API call to enroll the user
+        const response = await fetch('/api/enroll', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            userId: user.id,
+            courseId: courseId,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to enroll in course');
+        }
+
+        // Only navigate after successful enrollment
+        router.push(`/dashboard/courses/${courseId}`);
+        
+      } catch (error) {
+        console.error("Error in handleEnroll:", error);
+        setError("Failed to enroll in course. Please try again.");
+      }
     });
   };
 
-  // Show loading spinner while loading
-  if (!isUserLoaded || isPending) {
+  // Show loading state while checking user
+  if (!isUserLoaded) {
     return (
-      <div className="w-full h-12 rounded-lg bg-gray-100 flex items-center justify-center">
-        <div className="w-5 h-5 border-2 border-gray-400 border-t-gray-600 rounded-full animate-spin" />
+      <div className="flex items-center justify-center p-3 bg-gray-100 rounded-lg">
+        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
       </div>
     );
   }
 
-  // Already enrolled – show link to course
+  // Show enrolled state with link to course
   if (isEnrolled) {
     return (
       <Link
-        prefetch={false}
         href={`/dashboard/courses/${courseId}`}
-        className="w-full rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-green-500 to-emerald-500 text-white hover:from-green-600 hover:to-emerald-600 transition-all duration-300 h-12 flex items-center justify-center gap-2 group"
+        className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
       >
-        <span>Access Course</span>
-        <CheckCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
+        <CheckCircle className="w-4 h-4" />
+        Access Course
       </Link>
     );
   }
 
-  // Not enrolled yet – show enroll button
+  // Show enroll button
   return (
-    <button
-      className={`w-full rounded-lg px-6 py-3 font-medium transition-all duration-300 ease-in-out relative h-12
-        ${
-          isPending || !user?.id
-            ? "bg-gray-100 text-gray-400 cursor-not-allowed hover:scale-100"
-            : "bg-white text-black hover:scale-105 hover:shadow-lg hover:shadow-black/10"
-        }
-      `}
-      disabled={!user?.id || isPending}
-      onClick={handleEnroll}
-    >
-      {!user?.id ? (
-        <span className={`${isPending ? "opacity-0" : "opacity-100"}`}>
-          Sign in to Enroll
-        </span>
-      ) : (
-        <span className={`${isPending ? "opacity-0" : "opacity-100"}`}>
-          Enroll Now
-        </span>
+    <div className="space-y-2">
+      <button
+        onClick={() => handleEnroll(courseId)}
+        disabled={isPending}
+        className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
+      >
+        {isPending ? (
+          <>
+            <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+            Enrolling...
+          </>
+        ) : (
+          <>
+            {!user?.id ? "Sign in to Enroll" : "Enroll Now"}
+          </>
+        )}
+      </button>
+      
+      {error && (
+        <p className="text-red-600 text-sm text-center">{error}</p>
       )}
-      {isPending && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-5 h-5 border-2 border-gray-400 border-t-gray-600 rounded-full animate-spin" />
-        </div>
-      )}
-    </button>
+    </div>
   );
 }
 

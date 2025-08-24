@@ -1,28 +1,19 @@
-import groq from "groq";
-import { sanityFetch } from "../live";
+import { client } from "@/lib/sanity";
 
-export async function isEnrolledInCourse(clerkId: string, courseId: string) {
+export async function isEnrolledInCourse(studentId: string, courseId: string) {
   try {
-    // First get the student document using clerkId
-    const studentQuery = groq`*[_type == "student" && clerkId == $clerkId][0]._id`;
-    const studentId = await sanityFetch({
-      query: studentQuery,
-      params: { clerkId },
-    });
+    const enrollmentQuery = `*[_type == "courseEnrollment" && student._ref == $studentId && course._ref == $courseId][0]`;
+    const enrollment = await client.fetch(
+      enrollmentQuery,
+      { studentId, courseId },
+      { cache: "no-store" }
+    );
 
-    if (!studentId) {
-      console.log("No student found with clerkId:", clerkId);
-      return false;
-    }
+    console.log("Enrollment query:", enrollmentQuery);
+    console.log("Params:", { studentId, courseId });
+    console.log("Enrollment result:", enrollment);
 
-    // Then check for enrollment using the student's Sanity document ID
-    const enrollmentQuery = groq`*[_type == "enrollment" && student._ref == $studentId && course._ref == $courseId][0]`;
-    const enrollment = await sanityFetch({
-      query: enrollmentQuery,
-      params: { studentId: studentId.data, courseId },
-    });
-
-    return !!enrollment.data;
+    return !!enrollment;
   } catch (error) {
     console.error("Error checking enrollment status:", error);
     return false;

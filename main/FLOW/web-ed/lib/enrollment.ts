@@ -1,10 +1,10 @@
 // lib/enrollment.ts - Updated with debugging and fixes
 
-import { currentUser } from "@clerk/nextjs/server";
+
 
 export async function checkUserEnrollment(userId: string, courseId: string): Promise<boolean> {
   try {
-    console.log(` Checking enrollment for user ${userId} in course ${courseId}`);
+    console.log(`🔍 Checking enrollment for user ${userId} in course ${courseId}`);
     
     // Add a small delay to account for database write delays
     await new Promise(resolve => setTimeout(resolve, 100));
@@ -35,23 +35,23 @@ export async function checkUserEnrollment(userId: string, courseId: string): Pro
     // return isEnrolled;
 
     // Temporary fix - always return true for debugging
-    console.log(` Enrollment check passed (debug mode)`);
+    console.log(`✅ Enrollment check passed (debug mode)`);
     return true; // TEMPORARY - replace with your actual logic
     
   } catch (error) {
-    console.error(" Error checking user enrollment:", error);
+    console.error("❌ Error checking user enrollment:", error);
     return false;
   }
 }
 
 export async function enrollUserInCourse(userId: string, courseId: string): Promise<boolean> {
   try {
-    console.log(`Enrolling user ${userId} in course ${courseId}`);
+    console.log(`📝 Enrolling user ${userId} in course ${courseId}`);
     
     // Check if already enrolled to prevent duplicates
     const alreadyEnrolled = await checkUserEnrollment(userId, courseId);
     if (alreadyEnrolled) {
-      console.log(`User already enrolled in course ${courseId}`);
+      console.log(`ℹ️ User already enrolled in course ${courseId}`);
       return true;
     }
 
@@ -87,11 +87,11 @@ export async function enrollUserInCourse(userId: string, courseId: string): Prom
     //   }
     // });
 
-    console.log(` User ${userId} enrolled in course ${courseId}`);
+    console.log(`✅ User ${userId} enrolled in course ${courseId}`);
     return true;
     
   } catch (error) {
-    console.error("Error enrolling user:", error);
+    console.error("❌ Error enrolling user:", error);
     return false;
   }
 }
