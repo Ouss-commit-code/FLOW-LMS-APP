@@ -18,36 +18,23 @@ function EnrollButton({
   const [error, setError] = useState<string | null>(null);
 
   const handleEnroll = async (courseId: string) => {
-    if (!user?.id) {
-      // Redirect to sign in instead of trying to enroll
-      router.push("/sign-in");
-      return;
-    }
+    if (!user?.id) return; // Do nothing if user is not signed in
 
     startTransition(async () => {
       try {
         setError(null);
-        
-        // Add actual enrollment logic here
-        // This should be an API call to enroll the user
-        const response = await fetch('/api/enroll', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            userId: user.id,
-            courseId: courseId,
-          }),
+
+        const response = await fetch("/api/enroll", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId: user.id, courseId }),
         });
 
         if (!response.ok) {
-          throw new Error('Failed to enroll in course');
+          throw new Error("Failed to enroll in course");
         }
 
-        // Only navigate after successful enrollment
         router.push(`/dashboard/courses/${courseId}`);
-        
       } catch (error) {
         console.error("Error in handleEnroll:", error);
         setError("Failed to enroll in course. Please try again.");
@@ -55,7 +42,6 @@ function EnrollButton({
     });
   };
 
-  // Show loading state while checking user
   if (!isUserLoaded) {
     return (
       <div className="flex items-center justify-center p-3 bg-gray-100 rounded-lg">
@@ -64,7 +50,6 @@ function EnrollButton({
     );
   }
 
-  // Show enrolled state with link to course
   if (isEnrolled) {
     return (
       <Link
@@ -77,13 +62,14 @@ function EnrollButton({
     );
   }
 
-  // Show enroll button
   return (
     <div className="space-y-2">
       <button
         onClick={() => handleEnroll(courseId)}
-        disabled={isPending}
-        className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
+        disabled={isPending || !user?.id} // disabled if user not signed in
+        className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg 
+                   hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed 
+                   transition-colors flex items-center justify-center gap-2"
       >
         {isPending ? (
           <>
@@ -96,10 +82,8 @@ function EnrollButton({
           </>
         )}
       </button>
-      
-      {error && (
-        <p className="text-red-600 text-sm text-center">{error}</p>
-      )}
+
+      {error && <p className="text-red-600 text-sm text-center">{error}</p>}
     </div>
   );
 }
