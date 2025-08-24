@@ -1,4 +1,4 @@
-import { GetCompletionsQueryResult, Module } from "@/sanity.types";
+import { GetLessonCompletionsQueryResult, Module } from "@/sanity.types";
 
 export function calculateTotalLessons(modules: Module[] | null): number {
   if (!modules) return 0;
@@ -10,7 +10,7 @@ export function calculateTotalLessons(modules: Module[] | null): number {
 
 export function calculateCourseProgress(
   modules: Module[] | null,
-  completedLessons: GetCompletionsQueryResult["completedLessons"]
+  completedLessons: GetLessonCompletionsQueryResult["completedLessons"]
 ): number {
   const totalLessons = calculateTotalLessons(modules);
   const totalCompleted = completedLessons.length;
