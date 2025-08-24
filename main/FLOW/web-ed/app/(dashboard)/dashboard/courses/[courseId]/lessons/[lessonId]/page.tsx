@@ -1,9 +1,11 @@
+// app/lessons/[slug]/page.tsx
 import { redirect } from "next/navigation";
 import { currentUser } from "@clerk/nextjs/server";
 import { getLessonById } from "@/sanity/lib/lessons/getLessonById";
 import { PortableText } from "@portabletext/react";
-import { VideoPlayer } from "@/components/VideoPlayer";
+
 import { LessonCompleteButton } from "@/components/LessonCompleteButton";
+import { IframePlayer } from "@/components/IframePlayer"; // Updated import
 
 interface LessonPageProps {
   params: Promise<{
@@ -34,10 +36,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
 
           <div className="space-y-8">
             {/* Video Section */}
-            {lesson.videoUrl && <VideoPlayer   url={lesson.videoUrl} />}
-
-            {/* Loom Embed Video if loomUrl is provided */}
-            {/* {lesson.loomUrl && <LoomEmbed shareUrl={lesson.loomUrl} />} */}
+            {lesson.videoUrl && <IframePlayer url={lesson.videoUrl} />}
 
             {/* Lesson Content */}
             {lesson.content && (
