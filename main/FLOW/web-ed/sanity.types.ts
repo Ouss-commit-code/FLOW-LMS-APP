@@ -112,7 +112,6 @@ export type Lesson = {
   slug?: Slug;
   description?: string;
   videoUrl?: string;
-  loomUrl?: string;
   content?: Array<{
     children?: Array<{
       marks?: Array<string>;
@@ -372,7 +371,6 @@ export type ProgressQueryResult = {
       slug?: Slug;
       description?: string;
       videoUrl?: string;
-      loomUrl?: string;
       content?: Array<{
         children?: Array<{
           marks?: Array<string>;
@@ -459,7 +457,6 @@ export type ProgressQueryResult = {
         slug?: Slug;
         description?: string;
         videoUrl?: string;
-        loomUrl?: string;
         content?: Array<{
           children?: Array<{
             marks?: Array<string>;
@@ -542,7 +539,6 @@ export type GetCourseByIdQueryResult = {
       slug?: Slug;
       description?: string;
       videoUrl?: string;
-      loomUrl?: string;
       content?: Array<{
         children?: Array<{
           marks?: Array<string>;
@@ -639,7 +635,6 @@ export type GetCourseBySlugQueryResult = {
       slug?: Slug;
       description?: string;
       videoUrl?: string;
-      loomUrl?: string;
       content?: Array<{
         children?: Array<{
           marks?: Array<string>;
@@ -709,7 +704,6 @@ export type CourseProgressQueryResult = {
       slug?: Slug;
       description?: string;
       videoUrl?: string;
-      loomUrl?: string;
       content?: Array<{
         children?: Array<{
           marks?: Array<string>;
@@ -796,7 +790,6 @@ export type CourseProgressQueryResult = {
         slug?: Slug;
         description?: string;
         videoUrl?: string;
-        loomUrl?: string;
         content?: Array<{
           children?: Array<{
             marks?: Array<string>;
@@ -1066,7 +1059,6 @@ export type GetLessonCompletionsQueryResult = {
       slug?: Slug;
       description?: string;
       videoUrl?: string;
-      loomUrl?: string;
       content?: Array<{
         children?: Array<{
           marks?: Array<string>;
@@ -1153,7 +1145,6 @@ export type GetLessonCompletionsQueryResult = {
         slug?: Slug;
         description?: string;
         videoUrl?: string;
-        loomUrl?: string;
         content?: Array<{
           children?: Array<{
             marks?: Array<string>;
@@ -1209,7 +1200,6 @@ export type GetLessonsCompletionsQueryResult = {
       slug?: Slug;
       description?: string;
       videoUrl?: string;
-      loomUrl?: string;
       content?: Array<{
         children?: Array<{
           marks?: Array<string>;
@@ -1296,7 +1286,6 @@ export type GetLessonsCompletionsQueryResult = {
         slug?: Slug;
         description?: string;
         videoUrl?: string;
-        loomUrl?: string;
         content?: Array<{
           children?: Array<{
             marks?: Array<string>;
@@ -1339,7 +1328,6 @@ export type GetLessonByIdQueryResult = {
   slug?: Slug;
   description?: string;
   videoUrl?: string;
-  loomUrl?: string;
   content?: Array<{
     children?: Array<{
       marks?: Array<string>;
