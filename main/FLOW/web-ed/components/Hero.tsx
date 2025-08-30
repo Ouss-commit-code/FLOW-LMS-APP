@@ -12,7 +12,7 @@ function Hero() {
         
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
             
-            <div className="max-w-3xl">
+            <div className="max-w-3xl"><br /> <br />
               <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/80 
                  bg-clip-text ">
                  Expand your Knowledge with Our Courses 

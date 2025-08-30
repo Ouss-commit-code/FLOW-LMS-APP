@@ -355,7 +355,7 @@ export default function MyStats() {
                   <RotateCcw className="mr-2 h-4 w-4" /> Reset Stats
                 </Button>
               </AlertDialogTrigger>
-              <AlertDialogContent className="bg-background border-2">
+              <AlertDialogContent className="bg-background bg-cyan-950 border-2">
                 <AlertDialogHeader>
                   <AlertDialogTitle className="text-xl font-semibold">Reset All Statistics?</AlertDialogTitle>
                   <AlertDialogDescription className="text-muted-foreground">
@@ -364,31 +364,12 @@ export default function MyStats() {
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 
-                <div className="grid grid-cols-3 gap-4 py-4">
-                  <div className="flex flex-col items-center justify-center p-4 bg-muted rounded-lg">
-                    <Target className="h-6 w-6 text-muted-foreground mb-2" />
-                    <p className="text-sm text-muted-foreground">Total Attempts</p>
-                    <p className="text-2xl font-bold">0</p>
-                  </div>
-                  
-                  <div className="flex flex-col items-center justify-center p-4 bg-muted rounded-lg">
-                    <Trophy className="h-6 w-6 text-muted-foreground mb-2" />
-                    <p className="text-sm text-muted-foreground">Completion Rate</p>
-                    <p className="text-2xl font-bold">0%</p>
-                  </div>
-                  
-                  <div className="flex flex-col items-center justify-center p-4 bg-muted rounded-lg">
-                    <BarChart3 className="h-6 w-6 text-muted-foreground mb-2" />
-                    <p className="text-sm text-muted-foreground">Average Score</p>
-                    <p className="text-2xl font-bold">0%</p>
-                  </div>
-                </div>
                 
                 <AlertDialogFooter className="sm:justify-between">
-                  <AlertDialogCancel className="mt-0">Cancel</AlertDialogCancel>
+                  <AlertDialogCancel className="mt-0  bg-slate-950">Cancel</AlertDialogCancel>
                   <AlertDialogAction 
                     onClick={resetAllAttempts}
-                    className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                    className="bg-destructive bg-slate-950 text-destructive-foreground hover:bg-destructive/80"
                   >
                     Reset All
                   </AlertDialogAction>
