@@ -8,8 +8,8 @@ import { SanityLive } from "@/sanity/lib/live";
 
 
 export const metadata: Metadata = {
-  title: "Home page",
-  description: "Home section",
+  title: "Get Certified page",
+  description: "Get certified section",
 };
 
 export default function UserLayout({

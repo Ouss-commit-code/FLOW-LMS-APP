@@ -336,7 +336,7 @@ export default function MyStats() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background"><br /><br /><br />
       <div className="container mx-auto p-6">
         {/* Header with back button and controls */}
         <div className="flex items-center justify-between mb-6">
