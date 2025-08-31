@@ -43,7 +43,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { ArrowLeft, BarChart3, Trophy, Calendar, Target, RotateCcw } from "lucide-react";
-import DarkModeToggle from "@/components/DarkModeToggle"; // Adjust path as needed
 
 // Your quiz data
 const quizzes: Quiz[] = [
@@ -321,7 +320,7 @@ export default function MyStats() {
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
             </Button>
             <div className="flex items-center gap-4">
-              <DarkModeToggle />
+              
             </div>
           </div>
           <div className="flex items-center justify-center p-12">
@@ -377,7 +376,7 @@ export default function MyStats() {
               </AlertDialogContent>
             </AlertDialog>
             
-            <DarkModeToggle />
+           
           </div>
         </div>
         
