@@ -32,8 +32,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 1,
         question: "What does HTML stand for?",
         answers: [
-          { text: "HyperText Markup Language", correct: true },
+          
           { text: "High Tech Modern Language", correct: false },
+          { text: "HyperText Markup Language", correct: true },
           { text: "Home Tool Markup Language", correct: false },
           { text: "Hyperlink and Text Markup Language", correct: false }
         ]
@@ -42,9 +43,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 2,
         question: "Which CSS property is used to control the spacing between elements?",
         answers: [
-          { text: "margin", correct: true },
+          
           { text: "padding", correct: false },
           { text: "spacing", correct: false },
+          { text: "margin", correct: true },
           { text: "border", correct: false }
         ]
       },
@@ -123,9 +125,10 @@ const quizDatabase: Record<string, QuizData> = {
         question: "Which CSS property is used to make text bold?",
         answers: [
           { text: "text-weight", correct: false },
-          { text: "font-weight", correct: true },
+          
           { text: "text-style", correct: false },
-          { text: "font-style", correct: false }
+          { text: "font-style", correct: false },
+          { text: "font-weight", correct: true }
         ]
       },
       {
@@ -142,8 +145,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 12,
         question: "Which of the following is a CSS preprocessor?",
         answers: [
-          { text: "Sass", correct: true },
+          
           { text: "React", correct: false },
+          { text: "Sass", correct: true },
           { text: "jQuery", correct: false },
           { text: "Bootstrap", correct: false }
         ]
@@ -152,9 +156,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 13,
         question: "What is the default port for HTTP?",
         answers: [
-          { text: "80", correct: true },
+          
           { text: "443", correct: false },
           { text: "8080", correct: false },
+          { text: "80", correct: true },
           { text: "3000", correct: false }
         ]
       },
@@ -284,12 +289,12 @@ const quizDatabase: Record<string, QuizData> = {
         question: "Which database type is best for complex relationships?",
         answers: [
           { text: "NoSQL", correct: false },
-          { text: "Relational (SQL)", correct: true },
           { text: "Key-value store", correct: false },
+          { text: "Relational (SQL)", correct: true },
           { text: "Document database", correct: false }
         ]
       },
-      // Adding more questions to complete the 20 questions for system design
+      
       {
         id: 6,
         question: "What is caching primarily used for?",
@@ -340,7 +345,6 @@ const quizDatabase: Record<string, QuizData> = {
           { text: "Database management tool", correct: false }
         ]
       },
-      // Continue with remaining questions 11-20
       {
         id: 11,
         question: "What is a CDN?",
@@ -395,9 +399,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 16,
         question: "What is container orchestration?",
         answers: [
-          { text: "Managing containerized applications", correct: true },
+          
           { text: "Creating containers", correct: false },
           { text: "Shipping containers", correct: false },
+          { text: "Managing containerized applications", correct: true },
           { text: "Container storage", correct: false }
         ]
       },
@@ -415,10 +420,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 18,
         question: "What is a reverse proxy?",
         answers: [
-          { text: "Server that forwards client requests", correct: true },
+          
           { text: "Client that sends requests", correct: false },
           { text: "Database proxy", correct: false },
-          { text: "Network protocol", correct: false }
+          { text: "Network protocol", correct: false },
+          { text: "Server that forwards client requests", correct: true }
         ]
       },
       {
@@ -435,8 +441,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 20,
         question: "What is the difference between SQL and NoSQL?",
         answers: [
-          { text: "SQL is for structured data, NoSQL for unstructured", correct: true },
+          
           { text: "No difference", correct: false },
+          { text: "SQL is for structured data, NoSQL for unstructured", correct: true },
           { text: "SQL is newer than NoSQL", correct: false },
           { text: "NoSQL is only for web applications", correct: false }
         ]
@@ -476,9 +483,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 3,
         question: "What is overfitting in machine learning?",
         answers: [
-          { text: "Model performs well on training data but poorly on new data", correct: true },
+          
           { text: "Model performs poorly on all data", correct: false },
           { text: "Model is too simple", correct: false },
+          { text: "Model performs well on training data but poorly on new data", correct: true },
           { text: "Model trains too fast", correct: false }
         ]
       },
@@ -507,8 +515,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 6,
         question: "What is a correlation coefficient?",
         answers: [
-          { text: "Measures linear relationship between variables", correct: true },
+          
           { text: "Measures data quality", correct: false },
+          { text: "Measures linear relationship between variables", correct: true },
           { text: "Counts missing values", correct: false },
           { text: "Calculates data size", correct: false }
         ]
@@ -527,10 +536,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 8,
         question: "What is the purpose of normalization?",
         answers: [
-          { text: "Scale features to similar ranges", correct: true },
+          
           { text: "Remove duplicates", correct: false },
           { text: "Add new columns", correct: false },
-          { text: "Sort data", correct: false }
+          { text: "Sort data", correct: false },
+          { text: "Scale features to similar ranges", correct: true }
         ]
       },
       {
@@ -557,9 +567,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 11,
         question: "What is the curse of dimensionality?",
         answers: [
-          { text: "Problems with high-dimensional data", correct: true },
+         
           { text: "Data corruption", correct: false },
           { text: "Slow processing", correct: false },
+          { text: "Problems with high-dimensional data", correct: true },
           { text: "Memory issues", correct: false }
         ]
       },
@@ -577,8 +588,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 13,
         question: "What is the difference between Type I and Type II errors?",
         answers: [
-          { text: "Type I: false positive, Type II: false negative", correct: true },
+          
           { text: "Type I: false negative, Type II: false positive", correct: false },
+          { text: "Type I: false positive, Type II: false negative", correct: true },
           { text: "No difference", correct: false },
           { text: "Both are the same error", correct: false }
         ]
@@ -587,9 +599,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 14,
         question: "What is regularization?",
         answers: [
-          { text: "Technique to prevent overfitting", correct: true },
+          
           { text: "Data cleaning", correct: false },
           { text: "Feature scaling", correct: false },
+          { text: "Technique to prevent overfitting", correct: true },
           { text: "Model training", correct: false }
         ]
       },
@@ -607,9 +620,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 16,
         question: "What is ensemble learning?",
         answers: [
-          { text: "Combining multiple models for better performance", correct: true },
+          
           { text: "Training one perfect model", correct: false },
           { text: "Data preprocessing", correct: false },
+          { text: "Combining multiple models for better performance", correct: true },
           { text: "Feature selection", correct: false }
         ]
       },
@@ -617,10 +631,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 17,
         question: "What is principal component analysis (PCA)?",
         answers: [
-          { text: "Dimensionality reduction technique", correct: true },
+          
           { text: "Classification algorithm", correct: false },
           { text: "Clustering method", correct: false },
-          { text: "Data visualization tool", correct: false }
+          { text: "Data visualization tool", correct: false },
+          { text: "Dimensionality reduction technique", correct: true },
         ]
       },
       {
@@ -637,8 +652,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 19,
         question: "What is gradient descent?",
         answers: [
-          { text: "Optimization algorithm to minimize loss function", correct: true },
+          
           { text: "Data preprocessing step", correct: false },
+          { text: "Optimization algorithm to minimize loss function", correct: true },
           { text: "Feature selection method", correct: false },
           { text: "Evaluation metric", correct: false }
         ]
@@ -647,9 +663,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 20,
         question: "What is the purpose of ROC curve?",
         answers: [
-          { text: "Evaluate binary classifier performance", correct: true },
+          
           { text: "Data visualization", correct: false },
           { text: "Feature importance", correct: false },
+          { text: "Evaluate binary classifier performance", correct: true },
           { text: "Model training", correct: false }
         ]
       }
@@ -689,8 +706,8 @@ const quizDatabase: Record<string, QuizData> = {
         question: "What is the worst-case time complexity of quicksort?",
         answers: [
           { text: "O(n log n)", correct: false },
-          { text: "O(n²)", correct: true },
           { text: "O(n)", correct: false },
+          { text: "O(n²)", correct: true },
           { text: "O(log n)", correct: false }
         ]
       },
@@ -739,10 +756,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 8,
         question: "What is the purpose of dynamic programming?",
         answers: [
-          { text: "Solve problems by breaking them into subproblems", correct: true },
+          
           { text: "Allocate memory dynamically", correct: false },
           { text: "Create dynamic data structures", correct: false },
-          { text: "Generate random solutions", correct: false }
+          { text: "Generate random solutions", correct: false },
+          { text: "Solve problems by breaking them into subproblems", correct: true }
         ]
       },
       {
@@ -759,8 +777,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 10,
         question: "What is the time complexity of inserting into a hash table?",
         answers: [
-          { text: "O(1) average case", correct: true },
+          
           { text: "O(n) always", correct: false },
+          { text: "O(1) average case", correct: true },
           { text: "O(log n)", correct: false },
           { text: "O(n²)", correct: false }
         ]
@@ -779,9 +798,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 12,
         question: "What is the difference between BFS and DFS?",
         answers: [
-          { text: "BFS explores breadth-first, DFS explores depth-first", correct: true },
+          
           { text: "No difference", correct: false },
           { text: "BFS is faster", correct: false },
+          { text: "BFS explores breadth-first, DFS explores depth-first", correct: true },
           { text: "DFS uses less memory", correct: false }
         ]
       },
@@ -799,10 +819,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 14,
         question: "What is the time complexity of heap sort?",
         answers: [
-          { text: "O(n log n)", correct: true },
+       
           { text: "O(n²)", correct: false },
           { text: "O(n)", correct: false },
-          { text: "O(log n)", correct: false }
+          { text: "O(log n)", correct: false },
+           { text: "O(n log n)", correct: true },
         ]
       },
       {
@@ -829,8 +850,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 17,
         question: "What is a minimum spanning tree?",
         answers: [
-          { text: "Tree connecting all vertices with minimum weight", correct: true },
+          
           { text: "Smallest possible tree", correct: false },
+          { text: "Tree connecting all vertices with minimum weight", correct: true },
           { text: "Tree with minimum height", correct: false },
           { text: "Binary tree", correct: false }
         ]
@@ -839,9 +861,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 18,
         question: "What is the master theorem used for?",
         answers: [
-          { text: "Analyzing divide-and-conquer recurrence relations", correct: true },
+          
           { text: "Sorting algorithms", correct: false },
           { text: "Graph algorithms", correct: false },
+          { text: "Analyzing divide-and-conquer recurrence relations", correct: true },
           { text: "Dynamic programming", correct: false }
         ]
       },
@@ -859,9 +882,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 20,
         question: "What is the purpose of memoization?",
         answers: [
-          { text: "Cache results to avoid recomputation", correct: true },
+          
           { text: "Memory management", correct: false },
           { text: "Data compression", correct: false },
+          { text: "Cache results to avoid recomputation", correct: true },
           { text: "Algorithm optimization", correct: false }
         ]
       }
@@ -900,9 +924,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 3,
         question: "What does TCP guarantee?",
         answers: [
-          { text: "Reliable, ordered delivery", correct: true },
+          
           { text: "Fast delivery", correct: false },
           { text: "Broadcast capability", correct: false },
+          { text: "Reliable, ordered delivery", correct: true },
           { text: "Low latency", correct: false }
         ]
       },
@@ -920,8 +945,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 5,
         question: "What is DNS?",
         answers: [
-          { text: "Domain Name System", correct: true },
+          
           { text: "Dynamic Network Service", correct: false },
+          { text: "Domain Name System", correct: true },
           { text: "Data Network Security", correct: false },
           { text: "Distributed Name Server", correct: false }
         ]
@@ -930,10 +956,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 6,
         question: "What is the difference between TCP and UDP?",
         answers: [
-          { text: "TCP is reliable, UDP is unreliable but faster", correct: true },
+          
           { text: "UDP is more secure", correct: false },
           { text: "TCP is newer protocol", correct: false },
-          { text: "No significant difference", correct: false }
+          { text: "No significant difference", correct: false },
+          { text: "TCP is reliable, UDP is unreliable but faster", correct: true }
         ]
       },
       {
@@ -950,8 +977,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 8,
         question: "What is NAT?",
         answers: [
-          { text: "Network Address Translation", correct: true },
+          
           { text: "Network Access Token", correct: false },
+          { text: "Network Address Translation", correct: true },
           { text: "Network Authentication Tool", correct: false },
           { text: "Network Administration Terminal", correct: false }
         ]
@@ -970,9 +998,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 10,
         question: "What is a VLAN?",
         answers: [
-          { text: "Virtual Local Area Network", correct: true },
+          
           { text: "Very Large Area Network", correct: false },
           { text: "Variable Length Area Network", correct: false },
+          { text: "Virtual Local Area Network", correct: true },
           { text: "Virtual Link Access Network", correct: false }
         ]
       },
@@ -980,10 +1009,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 11,
         question: "What is the maximum TTL value in IPv4?",
         answers: [
-          { text: "255", correct: true },
+          
           { text: "64", correct: false },
           { text: "128", correct: false },
-          { text: "Unlimited", correct: false }
+          { text: "Unlimited", correct: false },
+          { text: "255", correct: true },
         ]
       },
       {
@@ -1000,8 +1030,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 13,
         question: "What is a firewall?",
         answers: [
-          { text: "Network security system that monitors traffic", correct: true },
+          
           { text: "Physical barrier", correct: false },
+          { text: "Network security system that monitors traffic", correct: true },
           { text: "Virus protection", correct: false },
           { text: "Data backup system", correct: false }
         ]
@@ -1010,9 +1041,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 14,
         question: "What is QoS?",
         answers: [
-          { text: "Quality of Service", correct: true },
+          
           { text: "Queue of Services", correct: false },
           { text: "Quick Operating System", correct: false },
+          { text: "Quality of Service", correct: true },
           { text: "Query Operation Service", correct: false }
         ]
       },
@@ -1030,10 +1062,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 16,
         question: "What is BGP?",
         answers: [
-          { text: "Border Gateway Protocol", correct: true },
+          
           { text: "Basic Gateway Protocol", correct: false },
           { text: "Broadcast Gateway Protocol", correct: false },
-          { text: "Binary Gateway Protocol", correct: false }
+          { text: "Binary Gateway Protocol", correct: false },
+          { text: "Border Gateway Protocol", correct: true }
         ]
       },
       {
@@ -1050,8 +1083,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 18,
         question: "What is the purpose of a proxy server?",
         answers: [
-          { text: "Intermediary between client and server", correct: true },
+          
           { text: "Store data permanently", correct: false },
+          { text: "Intermediary between client and server", correct: true },
           { text: "Encrypt all communications", correct: false },
           { text: "Replace the main server", correct: false }
         ]
@@ -1060,9 +1094,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 19,
         question: "What is packet switching?",
         answers: [
-          { text: "Method of data transmission using packets", correct: true },
+          
           { text: "Physical network switching", correct: false },
           { text: "Software switching", correct: false },
+          { text: "Method of data transmission using packets", correct: true },
           { text: "Hardware replacement", correct: false }
         ]
       },
@@ -1111,9 +1146,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 3,
         question: "What does a use case diagram represent?",
         answers: [
-          { text: "System functionality from user perspective", correct: true },
+          
           { text: "Class relationships", correct: false },
           { text: "Object interactions", correct: false },
+          { text: "System functionality from user perspective", correct: true },
           { text: "System deployment", correct: false }
         ]
       },
@@ -1121,10 +1157,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 4,
         question: "What is an association in UML?",
         answers: [
-          { text: "Relationship between classes", correct: true },
+          
           { text: "Method in a class", correct: false },
           { text: "Attribute of a class", correct: false },
-          { text: "Instance of a class", correct: false }
+          { text: "Instance of a class", correct: false },
+          { text: "Relationship between classes", correct: true }
         ]
       },
       {
@@ -1141,8 +1178,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 6,
         question: "What is aggregation in UML?",
         answers: [
-          { text: "Weak 'has-a' relationship", correct: true },
+          
           { text: "Strong 'is-a' relationship", correct: false },
+          { text: "Weak 'has-a' relationship", correct: true },
           { text: "Method call", correct: false },
           { text: "Data type", correct: false }
         ]
@@ -1161,9 +1199,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 8,
         question: "What does a sequence diagram show?",
         answers: [
-          { text: "Object interactions over time", correct: true },
+         
           { text: "Class structure", correct: false },
           { text: "System deployment", correct: false },
+          { text: "Object interactions over time", correct: true },
           { text: "Use cases", correct: false }
         ]
       },
@@ -1191,8 +1230,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 11,
         question: "What is a stereotype in UML?",
         answers: [
-          { text: "Extension mechanism to create new model elements", correct: true },
+          
           { text: "Type of diagram", correct: false },
+          { text: "Extension mechanism to create new model elements", correct: true },
           { text: "Class attribute", correct: false },
           { text: "Method parameter", correct: false }
         ]
@@ -1201,9 +1241,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 12,
         question: "What does a state diagram represent?",
         answers: [
-          { text: "Object behavior and state transitions", correct: true },
+         
           { text: "Class inheritance", correct: false },
           { text: "Use case scenarios", correct: false },
+          { text: "Object behavior and state transitions", correct: true },
           { text: "System deployment", correct: false }
         ]
       },
@@ -1221,10 +1262,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 14,
         question: "What does a deployment diagram show?",
         answers: [
-          { text: "Physical deployment of system components", correct: true },
+          
           { text: "Logical system structure", correct: false },
           { text: "User interactions", correct: false },
-          { text: "Data flow", correct: false }
+          { text: "Data flow", correct: false },
+          { text: "Physical deployment of system components", correct: true }
         ]
       },
       {
@@ -1241,8 +1283,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 16,
         question: "What does visibility in UML indicate?",
         answers: [
-          { text: "Access level of attributes and methods", correct: true },
+          
           { text: "Diagram clarity", correct: false },
+          { text: "Access level of attributes and methods", correct: true },
           { text: "Object location", correct: false },
           { text: "System performance", correct: false }
         ]
@@ -1251,9 +1294,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 17,
         question: "What is a package in UML?",
         answers: [
-          { text: "Grouping mechanism for model elements", correct: true },
+          
           { text: "Software installation file", correct: false },
           { text: "Data structure", correct: false },
+          { text: "Grouping mechanism for model elements", correct: true },
           { text: "Method collection", correct: false }
         ]
       },
@@ -1271,8 +1315,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 19,
         question: "What is abstract class in UML?",
         answers: [
-          { text: "Class that cannot be instantiated", correct: true },
+          
           { text: "Class with no methods", correct: false },
+          { text: "Class that cannot be instantiated", correct: true },
           { text: "Class with no attributes", correct: false },
           { text: "Class with private methods", correct: false }
         ]
@@ -1312,8 +1357,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 2,
         question: "What is a Sprint in Scrum?",
         answers: [
-          { text: "Time-boxed iteration of development", correct: true },
+          
           { text: "Final testing phase", correct: false },
+          { text: "Time-boxed iteration of development", correct: true },
           { text: "Project planning meeting", correct: false },
           { text: "Code review session", correct: false }
         ]
@@ -1322,9 +1368,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 3,
         question: "What is the role of a Product Owner?",
         answers: [
-          { text: "Define product requirements and priorities", correct: true },
+          
           { text: "Write all the code", correct: false },
           { text: "Manage the development team", correct: false },
+          { text: "Define product requirements and priorities", correct: true },
           { text: "Test the final product", correct: false }
         ]
       },
@@ -1342,8 +1389,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 5,
         question: "What is the purpose of Daily Standups?",
         answers: [
-          { text: "Sync team progress and identify blockers", correct: true },
+         
           { text: "Review code quality", correct: false },
+          { text: "Sync team progress and identify blockers", correct: true },
           { text: "Plan the entire project", correct: false },
           { text: "Conduct performance reviews", correct: false }
         ]
@@ -1362,9 +1410,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 7,
         question: "What is Definition of Done?",
         answers: [
-          { text: "Criteria for completing work items", correct: true },
+         
           { text: "Project end date", correct: false },
           { text: "Team formation", correct: false },
+           { text: "Criteria for completing work items", correct: true },
           { text: "Budget allocation", correct: false }
         ]
       },
@@ -1372,8 +1421,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 8,
         question: "What is a Sprint Retrospective?",
         answers: [
-          { text: "Team reflection on process improvement", correct: true },
+          
           { text: "Product demonstration", correct: false },
+          { text: "Team reflection on process improvement", correct: true },
           { text: "Planning next sprint", correct: false },
           { text: "Code review meeting", correct: false }
         ]
@@ -1392,10 +1442,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 10,
         question: "What is velocity in Agile?",
         answers: [
-          { text: "Amount of work completed per sprint", correct: true },
+          
           { text: "Code execution speed", correct: false },
           { text: "Team formation speed", correct: false },
-          { text: "Project completion rate", correct: false }
+          { text: "Project completion rate", correct: false },
+          { text: "Amount of work completed per sprint", correct: true }
         ]
       },
       {
@@ -1412,8 +1463,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 12,
         question: "What is pair programming?",
         answers: [
-          { text: "Two developers working together on same code", correct: true },
+          
           { text: "Writing code in pairs of files", correct: false },
+          { text: "Two developers working together on same code", correct: true },
           { text: "Using two computers", correct: false },
           { text: "Working in two shifts", correct: false }
         ]
@@ -1432,9 +1484,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 14,
         question: "What is the role of Scrum Master?",
         answers: [
-          { text: "Facilitate Scrum process and remove impediments", correct: true },
+         
           { text: "Manage the development team", correct: false },
           { text: "Write all requirements", correct: false },
+          { text: "Facilitate Scrum process and remove impediments", correct: true },
           { text: "Test the final product", correct: false }
         ]
       },
@@ -1442,8 +1495,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 15,
         question: "What is story pointing?",
         answers: [
-          { text: "Estimating effort required for user stories", correct: true },
+         
           { text: "Counting lines of code", correct: false },
+          { text: "Estimating effort required for user stories", correct: true },
           { text: "Measuring team performance", correct: false },
           { text: "Tracking project budget", correct: false }
         ]
@@ -1472,9 +1526,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 18,
         question: "What is technical debt?",
         answers: [
-          { text: "Cost of additional work due to quick solutions", correct: true },
+          
           { text: "Money owed to developers", correct: false },
           { text: "Project budget deficit", correct: false },
+          { text: "Cost of additional work due to quick solutions", correct: true },
           { text: "Time spent on meetings", correct: false }
         ]
       },
@@ -1482,9 +1537,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 19,
         question: "What is acceptance criteria?",
         answers: [
-          { text: "Conditions for user story completion", correct: true },
+         
           { text: "Team member qualifications", correct: false },
           { text: "Project approval process", correct: false },
+          { text: "Conditions for user story completion", correct: true },
           { text: "Budget requirements", correct: false }
         ]
       },
@@ -1523,8 +1579,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 2,
         question: "What is the difference between supervised and unsupervised learning?",
         answers: [
-          { text: "Supervised uses labeled data, unsupervised doesn't", correct: true },
+          
           { text: "Supervised is faster", correct: false },
+          { text: "Supervised uses labeled data, unsupervised doesn't", correct: true },
           { text: "No difference", correct: false },
           { text: "Unsupervised uses labeled data", correct: false }
         ]
@@ -1543,8 +1600,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 4,
         question: "What is overfitting?",
         answers: [
-          { text: "Model performs well on training data but poorly on new data", correct: true },
+          
           { text: "Model is too simple", correct: false },
+          { text: "Model performs well on training data but poorly on new data", correct: true },
           { text: "Model trains too fast", correct: false },
           { text: "Model uses too much memory", correct: false }
         ]
@@ -1553,9 +1611,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 5,
         question: "What is a feature in machine learning?",
         answers: [
-          { text: "Individual measurable property of observed phenomenon", correct: true },
+          
           { text: "Software functionality", correct: false },
           { text: "Model output", correct: false },
+          { text: "Individual measurable property of observed phenomenon", correct: true },
           { text: "Algorithm complexity", correct: false }
         ]
       },
@@ -1573,8 +1632,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 7,
         question: "What is deep learning?",
         answers: [
-          { text: "Machine learning with multi-layer neural networks", correct: true },
+          
           { text: "Learning from deep databases", correct: false },
+          { text: "Machine learning with multi-layer neural networks", correct: true },
           { text: "Complex programming", correct: false },
           { text: "Advanced statistics", correct: false }
         ]
@@ -1583,9 +1643,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 8,
         question: "What is cross-validation?",
         answers: [
-          { text: "Technique to assess model performance", correct: true },
+          
           { text: "Data cleaning method", correct: false },
           { text: "Feature engineering", correct: false },
+          { text: "Technique to assess model performance", correct: true },
           { text: "Model deployment", correct: false }
         ]
       },
@@ -1613,9 +1674,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 11,
         question: "What is regularization?",
         answers: [
-          { text: "Technique to prevent overfitting", correct: true },
+          
           { text: "Data normalization", correct: false },
           { text: "Feature scaling", correct: false },
+          { text: "Technique to prevent overfitting", correct: true },
           { text: "Model training", correct: false }
         ]
       },
@@ -1633,8 +1695,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 13,
         question: "What is backpropagation?",
         answers: [
-          { text: "Algorithm for training neural networks", correct: true },
+          
           { text: "Data flow reversal", correct: false },
+          { text: "Algorithm for training neural networks", correct: true },
           { text: "Error correction method", correct: false },
           { text: "Network communication protocol", correct: false }
         ]
@@ -1643,9 +1706,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 14,
         question: "What is a hyperparameter?",
         answers: [
-          { text: "Configuration setting for learning algorithm", correct: true },
+          
           { text: "Model output parameter", correct: false },
           { text: "Data input parameter", correct: false },
+          { text: "Configuration setting for learning algorithm", correct: true },
           { text: "System performance metric", correct: false }
         ]
       },
@@ -1673,8 +1737,9 @@ const quizDatabase: Record<string, QuizData> = {
         id: 17,
         question: "What is the bias-variance tradeoff?",
         answers: [
-          { text: "Balance between model simplicity and flexibility", correct: true },
+          
           { text: "Choice between different algorithms", correct: false },
+          { text: "Balance between model simplicity and flexibility", correct: true },
           { text: "Data quality vs quantity", correct: false },
           { text: "Speed vs accuracy", correct: false }
         ]
@@ -1683,9 +1748,10 @@ const quizDatabase: Record<string, QuizData> = {
         id: 18,
         question: "What is transfer learning?",
         answers: [
-          { text: "Using pre-trained model for new task", correct: true },
+         
           { text: "Moving data between systems", correct: false },
           { text: "Transferring knowledge to humans", correct: false },
+          { text: "Using pre-trained model for new task", correct: true },
           { text: "Sharing models between teams", correct: false }
         ]
       },
@@ -1703,10 +1769,11 @@ const quizDatabase: Record<string, QuizData> = {
         id: 20,
         question: "What is natural language processing (NLP)?",
         answers: [
-          { text: "Field of AI dealing with human language", correct: true },
+         
           { text: "Programming language", correct: false },
           { text: "Network protocol", correct: false },
-          { text: "Data processing technique", correct: false }
+          { text: "Data processing technique", correct: false },
+           { text: "Field of AI dealing with human language", correct: true }
         ]
       }
     ]
