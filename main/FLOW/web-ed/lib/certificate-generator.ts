@@ -14,18 +14,53 @@ export const generateCertificate = async (
     format: "a4"
   });
 
-  // Add background
-  doc.setFillColor(240, 240, 240);
+   // ===== Background =====
+  // Soft gradient-like background effect
+  doc.setFillColor(245, 245, 250); // light neutral
   doc.rect(0, 0, 297, 210, 'F');
 
-  // Add border
-  doc.setDrawColor(200, 200, 200);
-  doc.setLineWidth(1);
-  doc.rect(10, 10, 277, 190);
+  // ===== Border =====
+  // Outer thick border
+  doc.setDrawColor(100, 100, 100);
+  doc.setLineWidth(2);
+  doc.rect(8, 8, 281, 194);
 
-  // Add decorative elements
-  doc.setFillColor(59, 130, 246);
-  doc.rect(10, 10, 277, 30, 'F');
+  // Inner thin border for elegance
+  doc.setDrawColor(180, 180, 180);
+  doc.setLineWidth(0.5);
+  doc.rect(14, 14, 269, 182);
+
+  // ===== Header Banner =====
+  doc.setFillColor(30, 64, 175); // deep blue
+  doc.rect(14, 14, 269, 25, 'F');
+
+  // ===== Decorative Lines =====
+  // Gold accent lines under the banner
+  doc.setDrawColor(212, 175, 55); // gold
+  doc.setLineWidth(1.2);
+  doc.line(14, 39, 283, 39);
+  doc.setLineWidth(0.6);
+  doc.line(14, 42, 283, 42);
+
+  // ===== Corner Decorations =====
+  doc.setDrawColor(212, 175, 55);
+  doc.setLineWidth(1);
+
+  // Top-left
+  doc.line(14, 14, 35, 14);
+  doc.line(14, 14, 14, 35);
+
+  // Top-right
+  doc.line(283, 14, 262, 14);
+  doc.line(283, 14, 283, 35);
+
+  // Bottom-left
+  doc.line(14, 196, 14, 175);
+  doc.line(14, 196, 35, 196);
+
+  // Bottom-right
+  doc.line(283, 196, 262, 196);
+  doc.line(283, 196, 283, 175);
 
   // Add title
   doc.setFontSize(28);
