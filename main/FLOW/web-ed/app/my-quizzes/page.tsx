@@ -107,6 +107,42 @@ export default async function Home() {
           ))}
         </div>
       </div>
-    </div>
+    
+  
+
+       {/* Information Section */}
+        <div className="mt-16 bg-muted/50 rounded-lg p-8">
+          <h2 className="text-2xl font-bold text-center mb-6">Why Practice using our Quizzes?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">💼</span>
+              </div>
+              <h3 className="font-semibold mb-2">Retrieval Practice</h3>
+              <p className="text-sm text-muted-foreground">
+                Engaging with practice quizzes helps students retrieve information from memory.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">💰</span>
+              </div>
+              <h3 className="font-semibold mb-2">This Method strengthens neural pathways</h3>
+              <p className="text-sm text-muted-foreground">
+                Making it easier to recall information during actual assessments.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🌍</span>
+              </div>
+              <h3 className="font-semibold mb-2">Quizzes also serve as a diagnostic tool</h3>
+              <p className="text-sm text-muted-foreground">
+                 Students to identify gaps in their understanding and focus their study efforts on weaker areas.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
   );
 }

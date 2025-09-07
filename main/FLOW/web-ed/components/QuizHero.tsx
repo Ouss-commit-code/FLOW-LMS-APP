@@ -14,12 +14,12 @@ function Hero() {
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
             
             <div className="max-w-3xl"><br /><br />
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/80 
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/80 
                  bg-clip-text">
                  Test your Knowledge using Our Quizzes 
               </h1>  
               
-              <p className="text-xl text-muted-foreground">
+              <p className="text-x2 text-muted-foreground">
                   Each quiz consists of 20 questions with a 5-minute time limit, and a minimum score of 70% is required to pass.
               </p>  
             </div> 

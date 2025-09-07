@@ -13,12 +13,12 @@ function Hero() {
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
             
             <div className="max-w-3xl"><br /> <br />
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/80 
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/80 
                  bg-clip-text ">
                  Expand your Knowledge with Our Courses 
               </h1>  
               
-              <p className="text-xl text-muted-foreground">
+              <p className="text-x2 text-muted-foreground">
                   Discover a wolrd of learning with our expertly crafted Courses. 
                   Learn from Industry Professionals and take your Skills to the Next Level.
               </p>  
