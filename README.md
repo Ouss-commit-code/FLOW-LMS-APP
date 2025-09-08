@@ -1,17 +1,22 @@
 
-# FLOW plateforme Web Educative l'apprentissage :  
+# FLOW Educational Web Platform Learning :  
 
-FLOW est construit en utilisant un stack technologique moderne et performant, centré sur Next.js 15 pour le framework principal, qui permet une rendu côté serveur et des actions serveur pour une performance optimale. Sanity CMS est intégré pour la gestion de contenu dynamique, offrant une édition riche en texte et une structuration flexible des cours (avec des schémas pour les cours, modules et leçons). L'authentification est gérée par Clerk, qui supporte une vérification sécurisée via code envoyé par e-mail depuis le compte Gmail de l'étudiant, assurant une connexion fluide et protégée. D'autres technologies clés incluent TypeScript pour une typage strict, Tailwind CSS et Shadcn/UI pour un design moderne et responsive, Lucide Icons pour les icônes
+FLOW is built using a modern and powerful technology stack, centered on Next.js 15 for the main framework, which enables server-side rendering and server actions for optimal performance. Sanity CMS is integrated for dynamic content management, offering rich text editing and flexible course structuring (with schemas for courses, modules, and lessons). Authentication is managed by Clerk, which supports secure verification via a code sent by email from the student's Gmail account, ensuring a smooth and protected connection. Other key technologies include TypeScript for strict typing, Tailwind CSS and Shadcn/UI for modern and responsive design, Lucide Icons for icons
+
+Interactive “My Quizzes” section: Creation of an interactive area for practicing multiple quizzes with score recording and attempt history in my-stats.
+
+“My Stats” section: Recording and viewing of student statistics, such as time spent, cumulative scores, and learning trends from quizzes in the “My Quizzes” section.
+
+“Get Certified” section: System for issuing certifications based on preparation exams for recognized certificates completed, with PDF certificate generation.
 
 
-Section "My Quizzes" Interactive : Création d'une zone interactive pour pratiquer des quizzes multiples  avec enregistrement des scores et historique des tentatives dans my-stats.
+The project has progressed significantly, with a well-organized code structure and several front-end features implemented. The file and directory structure is clear: 
 
-Section "My Stats" : Enregistrement et visualisation des statistiques des étudiants, comme le temps passé, les scores cumulés, et les tendances d'apprentissage depuis quizzes in my-quizzes section
-
-Section "Get Certified" : Système de délivrance de certifications basées sur les exams de preparation pour les certificates reconnus complétés et  avec génération de certificats PDF.
-
-
-Le projet a progressé de manière significative, avec une structure de code bien organisée et plusieurs fonctionnalités front-end implémentées. La structure des fichiers et répertoires est claire : le dossier /app contient les routes principales comme le dashboard et les pages utilisateur ; /api gère les routes API ; /components abrite les composants React ; /sanity configure Sanity CMS ; /lib inclut les fonctions utilitaires et les schémas de contenu. Cela reflète une architecture modulaire, facilitant l'extension future.
+/app folder contains the main routes such as the dashboard and user pages; 
+/api manages API routes; 
+/components houses React components; 
+/sanity configures Sanity CMS; 
+/lib includes utility functions and content schemas. This reflects a modular architecture, facilitating future expansion.
 
 technologies : 
 
