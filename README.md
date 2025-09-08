@@ -184,7 +184,7 @@ Add content and media
 Publish course
 Student Experience
 Browse available courses
-Purchase and enroll in courses
+ enroll in courses
 Access course content
 Track progress through modules
 Mark lessons as complete
