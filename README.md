@@ -60,3 +60,133 @@ Beautiful course landing pages
 Interactive quizzes with timer and score limit to memorize 
 attempts of quizzes persuade the progress in my stats section with graphics and presentation of the overall attempts score and reset of all stats button if you wanna started fresh again!  
 Get certified section with many exams of preparations 9 recognized certificates: CCNA; JOSA JS; AWS; CEH; Comptai security+; Agile development; OMG UML certificate with timer and score limit and you can download a certificate of preparation with Full Name and which certificate you passed name and your score and time of succession.
+
+
+Getting Started : 
+
+Prerequisites :
+
+Node.js 18+
+npm/yarn
+Stripe Account
+Clerk Account
+Sanity Account
+
+Environment Variables
+Create a .env.local file with :
+
+# Sanity
+NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id
+NEXT_PUBLIC_SANITY_DATASET=production
+# Read Token
+SANITY_API_TOKEN=your-sanity-read-token
+# Full Access Admin Token
+SANITY_API_ADMIN_TOKEN=your-sanity-admin-token
+
+# For Sanity Studio to read
+SANITY_STUDIO_PROJECT_ID=your-project-id
+SANITY_STUDIO_DATASET=production
+
+# Next.js
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
+CLERK_SECRET_KEY=your-clerk-secret-key
+
+
+Setting up Sanity CMS :
+
+Create a Sanity account
+Create a new project
+
+Install the Sanity CLI:
+
+npm install -g @sanity/cli
+
+Initialize Sanity in your project:
+
+sanity init
+
+Deploy Sanity Studio:
+
+sanity deploy
+
+Setting up Clerk :
+
+Create a Clerk application
+Configure authentication providers
+Set up redirect URLs
+Add environment variables
+
+Architecture :
+
+Content Schema
+Courses
+
+Title
+Description
+Image
+Modules
+Instructor
+Category
+Modules
+
+Title
+Lessons
+Lessons
+
+Title
+Description
+Video URL
+Content (Rich Text)
+Completion Status
+Students
+
+Profile Information
+Enrolled Courses
+Progress Data
+Instructors
+
+Name
+Bio
+Photo
+Courses
+
+
+Key Components :
+
+Course Management System
+
+Content creation and organization
+Module and lesson structuring
+Rich text editing
+Media integration
+Progress Tracking
+
+Lesson completion
+Course progress calculation
+Module progress visualization
+
+Course enrollment
+User Authentication
+
+Clerk authentication
+Protected routes
+User roles
+
+Usage :
+
+Creating a Course
+Access Sanity Studio
+Create course structure with modules and lessons
+Add content and media
+Publish course
+Student Experience
+Browse available courses
+Purchase and enroll in courses
+Access course content
+Track progress through modules
+Mark lessons as complete
+View completion certificates
+
