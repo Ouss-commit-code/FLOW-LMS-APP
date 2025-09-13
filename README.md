@@ -3,10 +3,12 @@
   
 # FLOW Educational Web Platform Learning :  
 
+
+
 FLOW is built using a modern and powerful technology stack, centered on Next.js 15 for the main framework, which enables server-side rendering and server actions for optimal performance. Sanity CMS is integrated for dynamic content management, offering rich text editing and flexible course structuring (with schemas for courses, modules, and lessons). Authentication is managed by Clerk, which supports secure verification via a code sent by email from the student's Gmail account, ensuring a smooth and protected connection. Other key technologies include TypeScript for strict typing, Tailwind CSS and Shadcn/UI for modern and responsive design, Lucide Icons for icons
 
-Interactive “My Quizzes” section: Creation of an interactive area for practicing multiple quizzes with score recording and attempt history in my-stats.
 
+Interactive “My Quizzes” section: Creation of an interactive area for practicing multiple quizzes with score recording and attempt history in my-stats.
 “My Stats” section: Recording and viewing of student statistics, such as time spent, cumulative scores, and learning trends from quizzes in the “My Quizzes” section.
 
 “Get Certified” section: System for issuing certifications based on preparation exams for recognized certificates completed, with PDF certificate generation.
