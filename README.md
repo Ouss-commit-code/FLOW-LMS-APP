@@ -74,6 +74,7 @@ Instructor profiles
 Beautiful course landing pages
 Interactive quizzes with timer and score limit to memorize 
 attempts of quizzes persuade the progress in my stats section with graphics and presentation of the overall attempts score and reset of all stats button if you wanna started fresh again!  
+
 Get certified section with many exams of preparations 9 recognized certificates: CCNA; JOSA JS; AWS; CEH; Comptai security+; Agile development; OMG UML certificate with timer and score limit and full name of the user you can download a certificate of preparation.
 
 
