@@ -207,3 +207,16 @@ Track progress through modules
 Mark lessons as complete
 View completion certificates
 
+
+
+Key Files and Directories : 
+
+/app                    # Next.js app directory
+  /(dashboard)          # Dashboard routes
+  /(user)              # User routes
+  /api                 # API routes
+/components            # React components
+/sanity                # Sanity configuration
+  /lib                 # Sanity utility functions
+  /schemas             # Content schemas
+/lib                   # Utility functions
