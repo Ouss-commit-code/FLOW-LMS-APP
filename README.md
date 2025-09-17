@@ -220,3 +220,14 @@ Key Files and Directories :
   /lib                 # Sanity utility functions
   /schemas             # Content schemas
 /lib                   # Utility functions
+
+Core Technologies : 
+
+Next.js 15
+TypeScript
+Sanity CMS
+Stripe Payments
+Clerk Auth
+Tailwind CSS
+Shadcn UI
+Lucide Icons
