@@ -231,3 +231,13 @@ Clerk Auth
 Tailwind CSS
 Shadcn UI
 Lucide Icons
+
+Key Features :
+
+Student Experience
+Browse available courses
+enroll in courses
+Access course content
+Track progress through modules
+Mark lessons as complete
+View completion certificates after successful exam attempts 
