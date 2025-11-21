@@ -2,9 +2,15 @@
 
   
 # FLOW Educational Web Platform Learning :  
-<img width="404" height="274" alt="image" src="https://github.com/user-attachments/assets/05b8e0b2-4c55-4a64-90cf-b1582c7c4eed" />
-<img width="697" height="157" alt="image" src="https://github.com/user-attachments/assets/c3271e1a-6ef6-422a-a160-efea4330fa1b" />
-<img width="752" height="136" alt="image" src="https://github.com/user-attachments/assets/b88ba49f-55ce-4ebb-a76b-b9e4dec413bd" /><img width="312" height="98" alt="image" src="https://github.com/user-attachments/assets/d390bde0-c8c9-49b9-b604-761850840f55" />
+<img width="206" height="76" alt="image" src="https://github.com/user-attachments/assets/2d02670a-bccf-4d53-93a4-5c66b270b637" />
+<img width="312" height="98" alt="image" src="https://github.com/user-attachments/assets/d390bde0-c8c9-49b9-b604-761850840f55" />
+<img width="135" height="88" alt="image" src="https://github.com/user-attachments/assets/82320882-0abe-487e-b3f1-f61c506ff80e" />
+<img width="470" height="124" alt="image" src="https://github.com/user-attachments/assets/1fbc10e7-7caf-4b47-9d6a-a9dca8cad9d5" />
+<img width="524" height="99" alt="image" src="https://github.com/user-attachments/assets/bf88b353-324f-4aa1-a2c6-56ac3d8dd147" />
+
+
+
+
 
 
 
