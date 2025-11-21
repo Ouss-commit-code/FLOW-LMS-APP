@@ -2,10 +2,16 @@
 
   
 # FLOW Educational Web Platform Learning :  
+<img width="404" height="274" alt="image" src="https://github.com/user-attachments/assets/05b8e0b2-4c55-4a64-90cf-b1582c7c4eed" />
+<img width="697" height="157" alt="image" src="https://github.com/user-attachments/assets/c3271e1a-6ef6-422a-a160-efea4330fa1b" />
+<img width="752" height="136" alt="image" src="https://github.com/user-attachments/assets/b88ba49f-55ce-4ebb-a76b-b9e4dec413bd" /><img width="312" height="98" alt="image" src="https://github.com/user-attachments/assets/d390bde0-c8c9-49b9-b604-761850840f55" />
 
 
 
-FLOW is built using a modern and powerful technology stack, centered on Next.js 15 for the main framework, which enables server-side rendering and server actions for optimal performance. Sanity CMS is integrated for dynamic content management, offering rich text editing and flexible course structuring (with schemas for courses, modules, and lessons). Authentication is managed by Clerk, which supports secure verification via a code sent by email from the student's Gmail account, ensuring a smooth and protected connection.
+
+
+
+FLOW is built using a modern and powerful technology stack, centered on Next.js 15 for the main framework, which enables server-side rendering and server actions for optimal performance. Sanity CMS is integrated for dynamic content management, offering rich text editing and flexible courses structuring with schemas for courses, modules, and lessons. Authentication is managed by Clerk, which supports secure verification via a code sent by email from the student's Gmail account, ensuring a smooth and protected connection.
 Other key technologies include TypeScript for strict typing, Tailwind CSS and Shadcn/UI for modern and responsive design, Lucide Icons for icons.
 
 <img width="1332" height="797" alt="image" src="https://github.com/user-attachments/assets/d3ec0ea9-16a0-4247-aaae-c0e044cac967" />
