@@ -10,9 +10,15 @@ Other key technologies include TypeScript for strict typing, Tailwind CSS and Sh
 
 <img width="1332" height="797" alt="image" src="https://github.com/user-attachments/assets/d3ec0ea9-16a0-4247-aaae-c0e044cac967" />
 
+
+
 <img width="1273" height="546" alt="image" src="https://github.com/user-attachments/assets/79741e8f-f3f2-4afd-8fa6-52376fba7dd6" />
 
+
+
 <img width="1228" height="716" alt="image" src="https://github.com/user-attachments/assets/91191fc8-bf55-4493-911c-5e33a58abb84" />
+
+
 
 <img width="1319" height="622" alt="image" src="https://github.com/user-attachments/assets/92b3a08d-5edb-4dac-89dc-17992ef69190" />
 
@@ -24,11 +30,19 @@ Interactive “My Quizzes” section: Creation of an interactive area for practi
 
 <img width="1236" height="423" alt="image" src="https://github.com/user-attachments/assets/86e5625b-2d68-43fe-863a-cf49d049d23b" />
 
+
+
 <img width="1320" height="922" alt="image" src="https://github.com/user-attachments/assets/7e6cb617-736a-4f4e-8fca-a974f36e1709" />
+
+
 
 <img width="1123" height="640" alt="image" src="https://github.com/user-attachments/assets/cc225826-935d-488e-ba74-a220e021480a" />
 
+
+
 <img width="1252" height="575" alt="image" src="https://github.com/user-attachments/assets/b2cdf247-02ab-4ccb-8810-1de1474c6741" />
+
+
 
 
 
@@ -39,9 +53,15 @@ Interactive “My Quizzes” section: Creation of an interactive area for practi
 
 <img width="1247" height="558" alt="image" src="https://github.com/user-attachments/assets/1168076a-2593-4644-aada-4e242c18e68d" />
 
+
+
 <img width="1229" height="692" alt="image" src="https://github.com/user-attachments/assets/db1c2448-9cc3-415e-82f3-b9369340621f" />
 
+
+
+
 <img width="1278" height="695" alt="image" src="https://github.com/user-attachments/assets/8a030cc9-0cab-4768-ad95-a681071d2199" />
+
 
 
 
