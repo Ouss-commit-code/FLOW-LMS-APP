@@ -1,7 +1,7 @@
 
 
   
-# FLOW Learning Management System with Nextjs + Sanity CMS + Clerk + Tailwind CSS + Shadcn/UI :  
+# FLOW Learning Management System with Nextjs + TS + Sanity CMS + Clerk + Tailwind CSS + Shadcn/UI :  
 <img width="206" height="76" alt="image" src="https://github.com/user-attachments/assets/2d02670a-bccf-4d53-93a4-5c66b270b637" />
 <img width="312" height="98" alt="image" src="https://github.com/user-attachments/assets/d390bde0-c8c9-49b9-b604-761850840f55" />
 <img width="135" height="88" alt="image" src="https://github.com/user-attachments/assets/82320882-0abe-487e-b3f1-f61c506ff80e" />
