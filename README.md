@@ -23,11 +23,6 @@ Other key technologies include TypeScript for strict typing, Tailwind CSS and Sh
 <img width="1332" height="797" alt="image" src="https://github.com/user-attachments/assets/d3ec0ea9-16a0-4247-aaae-c0e044cac967" />
 
 
-
-<img width="1273" height="546" alt="image" src="https://github.com/user-attachments/assets/79741e8f-f3f2-4afd-8fa6-52376fba7dd6" />
-
-
-
 <img width="1228" height="716" alt="image" src="https://github.com/user-attachments/assets/91191fc8-bf55-4493-911c-5e33a58abb84" />
 
 
